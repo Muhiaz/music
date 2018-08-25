@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import profile
+from . models import album,song
+#from .models import song
 
-class profileAdmin(admin.ModelAdmin):
-	class Meta:
-		model =profile
-admin.site.register(profile,profileAdmin)
+
+admin.site.register(album)
+admin.site.register(song)
 
 # Register your models here.
